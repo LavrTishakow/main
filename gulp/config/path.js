@@ -5,7 +5,9 @@ const buildfolder = `./dist`;
 const srcFolder = `./src`;
 
 const path = {
-	build: {},
+	build: {
+		files: `${buildFolder}`
+	},
 	src: (),
 	watch: {},
 	clean: buildfolder,
