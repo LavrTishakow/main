@@ -4,11 +4,13 @@ const rootFolder = node.Path.basename(nodePath.resolve());
 const buildfolder = `./dist`;
 const srcFolder = `./src`;
 
-const path = {
+export const path = {
 	build: {
-		files: `${buildFolder}`
+		files: `${buildFolder}/files/`
 	},
-	src: (),
+	src: {
+		files: `${srcFolder}/files/**/*.*`,
+	},
 	watch: {},
 	clean: buildfolder,
 	buildFolder: buildFolder,
